@@ -11,6 +11,7 @@ const getSocket = () => {
   return socketio("http://localhost:8080", {
     withCredentials: true,
     auth: { token },
+    { transports : ['websocket'] }
   });
 };
 
