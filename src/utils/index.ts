@@ -60,7 +60,7 @@ export const getChatObjectMetadata = (
     // Return metadata specific to individual chats.
  
     return {
-      avatar: `${chat.receiver?.profile}`, // Participant's avatar URL.
+      avatar: `https://api.handymates.io${chat.receiver?.profile}`, // Participant's avatar URL.
       title: chat.receiver.name, // Participant's username serves as the title.
       description: chat.receiver?.email, // Email address of the participant.
       lastMessage,
