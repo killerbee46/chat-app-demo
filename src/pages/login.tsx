@@ -57,12 +57,7 @@ const Login = () => {
           Login
         </Button>
         {/* Link to the registration page */}
-        <small className="text-zinc-300">
-          Don&apos;t have an account?{" "}
-          <a className="text-primary hover:underline" href="/register">
-            Register
-          </a>
-        </small>
+       
       </div>
     </div>
   );
