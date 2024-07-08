@@ -11,6 +11,7 @@ const getSocket = () => {
   return socketio(import.meta.env.VITE_SOCKET, {
     withCredentials: true,
     auth: { token },
+    { transports : ['websocket'] }
   });
 };
 
